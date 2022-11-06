@@ -71,20 +71,6 @@ class Table extends Component {
         return (
             <div>
                 <Row>
-                    {
-                        this.state.search.map((header, index) => {
-                            return (
-                                <Col key={index}>
-                                    <div >
-                                        <Field id={header.accessor} label={header.accessor}
-                                               onChange={(e) => this.handleChange(e, index, header.accessor)}/>
-                                    </div>
-                                </Col>
-                            )
-                        })
-                    }
-                </Row>
-                <Row>
                     <Col>
                         <ReactTable
                             data={data}
